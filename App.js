@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Post from './src/components/Post';
 import HomeScreen from './src/screens/Home';
 
 const App = () => {
@@ -37,7 +38,8 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <Post />
       </SafeAreaView>
     </>
   );
