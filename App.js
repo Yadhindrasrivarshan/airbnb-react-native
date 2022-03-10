@@ -26,20 +26,15 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Post from './src/components/Post';
 import HomeScreen from './src/screens/Home';
-
+import feed from './assets/data/feed';
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+  const individualPost = feed[0];
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <Post />
+        <Post post={individualPost} />
       </SafeAreaView>
     </>
   );
