@@ -27,6 +27,9 @@ import {
 import Post from './src/components/Post';
 import HomeScreen from './src/screens/Home';
 import feed from './assets/data/feed';
+import SearchResultsPage from './src/screens/SearchResults';
+import DestinationSearch from './src/screens/DestinationSearch';
+import Guests from './src/screens/Guests';
 const App = () => {
   const individualPost = feed[0];
   return (
@@ -34,7 +37,10 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <Post post={individualPost} />
+        {/* <Post post={individualPost} /> */}
+        {/* <SearchResultsPage /> */}
+        {/* <DestinationSearch /> */}
+        {<Guests />}
       </SafeAreaView>
     </>
   );
